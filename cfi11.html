@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CFI</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+       body{
+        background-image: url(C:\\Users\\hp\\Desktop\\WHETHER.JPG);
+        background-repeat: no-repeat;
+        background-size: 1200px 700px;
+       }
+    </style>
+    <body>
+        <div class = "container">
+            <div class = "f-group">
+                <label for="">Date</label>
+                <select id="MaxTemp">
+                    <option value=""> -- Choose Date -- </option>
+                    <option value="MaxTemp = 14.9">2023-04-10</option>
+                    <option value="MaxTemp = 12">2023-04-11</option>
+                    <option value="MaxTemp = 14.3">2023-04-12</option>
+                    <option value="MaxTemp = 12.7">2023-04-13</option>
+                    <option value="MaxTemp = 8.5">2023-04-14</option>
+                    <option value="MaxTemp = 10.4">2023-04-15</option>
+                </select>
+            </div>
+        </div>
+                
+                
+                <div id="result"></div>
+            </div>
+        </div>
+
+        <script>
+            MaxTemp.onchange = function () {
+                result.innerText = this.value;
+            }
+        </script>
+    </body>
+</html>
